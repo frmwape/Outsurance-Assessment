@@ -1,0 +1,5 @@
+C:\OutsuranceassessmentTest\OutsuranceTest\bin\Debug\OutsuranceTest.dll
+C:\OutsuranceassessmentTest\OutsuranceTest\bin\Debug\OutsuranceTest.pdb
+C:\OutsuranceassessmentTest\OutsuranceTest\obj\Debug\OutsuranceTest.csprojResolveAssemblyReference.cache
+C:\OutsuranceassessmentTest\OutsuranceTest\obj\Debug\OutsuranceTest.dll
+C:\OutsuranceassessmentTest\OutsuranceTest\obj\Debug\OutsuranceTest.pdb

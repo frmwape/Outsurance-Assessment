@@ -1,0 +1,185 @@
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	transform-style: preserve-3d;
+
+}
+	/*  UPDATED! flip the pane when hovered */
+	.flip-container:hover .back {
+		transform: rotateY(0deg);
+	}
+	.flip-container:hover .front {
+	    transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 165px;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(-180deg);
+}
+
+/* 
+	Some vertical flip updates 
+*/
+.vertical.flip-container {
+	position: relative;
+}
+
+	.vertical .back {
+		transform: rotateX(180deg);
+	}
+
+	.vertical.flip-container:hover .back {
+	    transform: rotateX(0deg);
+	}
+
+	.vertical.flip-container:hover .front {
+	    transform: rotateX(180deg);
+	}
+.front-display {
+	text-align: center;
+	padding-top: 43%;
+	font-size: 12pt;
+	font-weight: bold;
+	height: 100%;
+	background: #00aeef;
+	color: #fff;
+	border-bottom: 5px solid #00aeef;
+	box-shadow: 0px 2px 8px #333;
+}
+.back-display {
+	line-height: 40px;
+	text-align: center;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	color: #626262;
+	border-bottom: 5px solid #F28E00;
+	box-shadow: 0px 2px 8px #333;
+}
+.bg-purple {
+	background: #70266E;
+}
+.bg-darkerblue {
+	background: #0077BE;
+}
+.bg-lime {
+	background: #8CBF30;
+}
+.bg-lightyellow {
+	background: #FFCC00;
+}
+.bg-pink {
+	background: #F3684B;
+}
+.bg-orange {
+	background: #F28E00;
+}
+.bg-turq {
+	background: #00A9AB;
+}
+.bg-red {
+	background: #CE1E29;
+}
+.bg-darkblue {
+	background: #004D9A;
+}
+.bg-white {
+	background: rgba(255,255,255,0.5);
+	border-bottom: 5px solid #00aeef;
+	box-shadow: 0px 2px 8px #555;
+}
+.bg-lightpurple {
+	background: #90266E;
+}
+.colour-bg {
+	background: #fff;
+}
+.black {
+	padding-top: 12%;
+	color: #8CBF30;
+	font-size: 70pt;
+}
+.backtxt {
+	font-size: 12pt;
+	color: #fff;
+}
+.pad {
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+.footer {
+	position: fixed;
+	padding: 0;
+	text-align: center;
+	line-height: 50px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(255,255,255,0.5);
+	color: #fff;
+	font-size: 14pt;
+}
+
+.Button {
+    color: #666;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    border: solid 1px #fff;
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+/*.backbg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	background: url('../bg.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);     
+    filter: blur(10px);
+}*/
+img {
+	padding: 1%;
+}
+body {
+	background: url('../bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
